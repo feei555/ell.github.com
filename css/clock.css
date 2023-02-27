@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #b5d7ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.table{
+    border-collapse:collapse;
+    border-radius: 10px;
+    text-align: center;
+}
+.front-end{
+    background-image: linear-gradient(to right, #6eb1fe, #bddbff);
+}
+.fitness{
+    background-image: linear-gradient(to right, #72eda5, #e4f0ff);
+}
+.English{
+    background-image: linear-gradient(to right, #edbc72, #e4f0ff);
+}
+.read{
+    background-image: linear-gradient(to right, #e95f3d, #e4f0ff);
+}
+td{
+    border: 1px solid #ffffff68;
+    width: 60px;
+    height: 35px;
+}
+.first-column{
+    border-left: none;
+}
+.last-line{
+    border-bottom: none;
+}
+.last-column{
+    border-right: none;
+}
+th{
+    padding: 10px;
+}
+
+.last-line-first-column{
+    border-left: none;
+    border-bottom: none;
+}
+.last-line-column{
+    border-right: none;
+    border-bottom: none;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+.clocktable {
+    position: absolute;
+    width: 60%;
+    height: 400px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: transform .5s ease;
+    cursor: pointer;
+}
+.shell{
+    margin-top: 150px;
+    width: 1000px;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+
+#table-1:checked ~ .tables #clock-1,
+#table-2:checked ~ .tables #clock-2,
+#table-3:checked ~ .tables #clock-3,
+#table-4:checked ~ .tables #clock-4{
+    transform: translate(0) scale(1);
+    opacity: 1;
+    z-index: 1;
+}
+#table-1:checked ~ .tables #clock-2,
+#table-2:checked ~ .tables #clock-3,
+#table-3:checked ~ .tables #clock-4,
+#table-4:checked ~ .tables #clock-1{
+    transform: translate(50%) scale(0.8);
+    opacity: .6;
+    z-index: 0;
+}
+#table-1:checked ~ .tables #clock-3,
+#table-2:checked ~ .tables #clock-4,
+#table-3:checked ~ .tables #clock-1,
+#table-4:checked ~ .tables #clock-2{
+    transform: translate(-50%) scale(0.8);
+    opacity: .6;
+    z-index: 0;
+}
+#table-1:checked ~ .tables #clock-4,
+#table-2:checked ~ .tables #clock-1,
+#table-3:checked ~ .tables #clock-2,
+#table-4:checked ~ .tables #clock-3{
+    transform: translate(0) scale(0.6);
+    opacity: .6;
+    z-index: 0;
+}

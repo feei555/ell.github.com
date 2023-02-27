@@ -1,0 +1,255 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #b5d7ff;
+}
+
+/* 导航栏样式 */
+.nav {
+    list-style: none;
+    text-align: center;
+    width: 700px;
+    height: 60px;
+    margin: 80px auto;
+    font-size: large;
+    color: rgb(255, 255, 255);
+    box-shadow: -5px 5px 0px #0000001b;
+    background-image: linear-gradient(to right, #6eb1fe, #c2ddfd);
+}
+
+/* 菜单样式 */
+.first-content {
+    float: left;
+    width: 100px;
+    line-height: 60px;
+    margin-left: 20px;
+}
+
+.first-content-1 {
+    float: left;
+    width: 100px;
+    line-height: 60px;
+    background-color: #c2ddfd73;
+    cursor: pointer;
+}
+
+/* 下拉菜单样式 */
+.second-content {
+    margin-top: 1px;
+    width: 100px;
+    line-height: 60px;
+    background-image: linear-gradient(to right, #2d8fff62, #c2ddfd7b);
+}
+
+.first-content:hover {
+    background-color: #c2ddfd73;
+    /* 鼠标 */
+    cursor: pointer;
+    /* 阴影，使导航栏有层次感 */
+    box-shadow: -5px 5px 0 rgba(25, 33, 42, 0.2);
+    /* 执行时间 */
+    transition: 0.3s;
+}
+
+/* 隐藏下拉菜单 */
+.second-content {
+    display: none;
+}
+
+/* 显示下拉菜单 */
+.first-content:hover .second-content {
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.second-content:hover {
+    background-color: #85beff;
+}
+
+.navhref {
+    text-decoration: none;
+}
+
+.navhref:link,
+.navhref:hover,
+.navhref:visited {
+    color: rgb(255, 255, 255);
+}
+
+.main {
+    position: relative;
+    width: 700px;
+    height: 450px;
+    margin: 0 auto;
+}
+
+/* 设置渐显动画 */
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        /*初始状态 透明度为0*/
+    }
+
+    100% {
+        opacity: 1;
+        /*结尾状态 透明度为1*/
+    }
+}
+
+.box {
+    animation-name: fadein;
+    /*动画名称*/
+    animation-duration: 2s;
+    /*动画持续时间*/
+    animation-iteration-count: 1;
+    /*动画次数*/
+    animation-delay: 0s;
+    /*延迟时间*/
+}
+
+/* 个人信息盒子修饰 */
+.informationbox {
+    position: absolute;
+    top: -60px;
+    left: 15px;
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: -5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+    float: left;
+    width: 70px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.p1 {
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: large;
+}
+
+table {
+    width: 330px;
+    font-size: large;
+    border-collapse: collapse;
+    margin-left: 10px;
+    margin-top: 100px;
+}
+
+td {
+    padding: 10px 0px;
+}
+
+.row1 {
+    border-top: 1px solid rgba(255, 255, 255, .6);
+}
+/* 技能盒子 */
+.skillbox {
+    position: absolute;
+    top: -60px;
+    right: 15px;
+    width: 300px;
+    height: 120px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: -5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.p2 {
+    margin-top: 20px;
+    font-size: large;
+    text-align: center;
+}
+
+.skilicon {
+    width: 40px;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: 15px;
+    box-shadow: -3px 3px 0px rgba(0, 0, 0, 0.3);
+}
+/* 技能图标2d旋转 */
+.skilicon:hover {
+    transform: rotate(360deg);
+    transition: 2s;
+    cursor: pointer;
+}
+/* 书架 */
+.bookshelfbox {
+    position: absolute;
+    top: 70px;
+    right: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 300px;
+    height: 370px;
+    border-radius: 10px;
+    box-shadow: -5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.p3 {
+    margin-top: 10px;
+    font-size: large;
+    text-align: center;
+}
+
+.hr1 {
+    background-color: rgb(255, 255, 255, 0.7);
+    border: none;
+    height: 2px;
+    width: 260px;
+    margin-left: 20px;
+    box-shadow: -3px 3px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.hr2 {
+    background-color: rgb(255, 255, 255, 0.7);
+    border: none;
+    height: 2px;
+    width: 260px;
+    margin-left: 20px;
+    box-shadow: -3px 3px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.hr3 {
+    background-color: rgb(255, 255, 255, 0.7);
+    border: none;
+    height: 2px;
+    width: 260px;
+    margin-left: 20px;
+    box-shadow: -3px 3px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.book {
+    width: 65px;
+    height: 85px;
+    margin-top: 15px;
+    margin-left: 24px;
+    box-shadow: -3px 3px 0px rgba(0, 0, 0, 0.3);
+}
+/* 书本平移 */
+.book:hover {
+    transform: translateY(-5px);
+    transition: 1s;
+}
+
+.information2 {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 660px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: -5px 5px 0px rgba(0, 0, 0, 0.1);
+}

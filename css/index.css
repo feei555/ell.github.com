@@ -1,0 +1,87 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* 调整背景图像 */
+body {
+    background: url(../image/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    position: relative;
+}
+
+.avatarbox {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.avatar {
+    width: 100px;
+    border-radius: 50%;
+    outline: rgba(255, 255, 255, 0.3) solid 1px;
+}
+
+.avatar:hover {
+    width: 102px;
+    cursor: pointer;
+}
+
+.text {
+    position: relative;
+    top: 250px;
+    left: 50%;
+    margin-left: -200px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    width: 400px;
+    margin-bottom: 280px;
+}
+
+.name {
+    color: rgba(240, 248, 255, 0.8);
+    font-size: 30px;
+}
+
+.signature {
+    padding-top: 40px;
+    color: rgba(240, 248, 255, 0.8);
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 20px;
+    text-indent: 20px;
+}
+
+.buttonbox {
+    width: 100%;
+    height: 50px;
+}
+
+.roombutton:link,
+.roombutton:visited {
+    text-decoration: none;
+    color: rgba(240, 248, 255, 0.8);
+    border: 1px solid rgba(240, 248, 255, 0.8);
+    border-radius: 100px 100px;
+    padding: 5px 10px;
+}
+
+.roombutton:hover {
+    color: rgba(240, 248, 255);
+    border: 1px solid rgba(240, 248, 255);
+    padding: 6px 11px;
+}
+
+.icon {
+    height: 23px;
+    margin: 80px 20px;
+    box-shadow: 1px 1px 5px #acacac;
+}
+
+.icon:hover {
+    border: 1px solid rgba(240, 248, 255, 0);
+}

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打卡记录</title>
+    <link rel="stylesheet" href="css/clock.css">
+    <link rel="shortcut icon" type="image/x-icon" href="image/title-icon.ico" media="screen">
+</head>
+<body>
+    <div class="shell">
+        <input type="radio" name="c" id="table-1" checked>
+        <input type="radio" name="c" id="table-2">
+        <input type="radio" name="c" id="table-3">
+        <input type="radio" name="c" id="table-4">
+        <div class="tables">
+            <label class="clocktable" for="table-1" id="clock-1">
+                <table class="front-end table">
+                    <th colspan="10">前端打卡（2023）</th>
+                    <tr>
+                        <td class="first-column">1.12</td>
+                        <td>1</td>
+                        <td>1.21</td>
+                        <td></td>
+                        <td>1.30</td>
+                        <td></td>
+                        <td>2.8</td>
+                        <td></td>
+                        <td>2.17</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">1.13</td>
+                        <td>1</td>
+                        <td>1.22</td>
+                        <td></td>
+                        <td>1.31</td>
+                        <td></td>
+                        <td>2.9</td>
+                        <td></td>
+                        <td>2.18</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">1.14</td>
+                        <td>1</td>
+                        <td>1.23</td>
+                        <td></td>
+                        <td>2.1</td>
+                        <td></td>
+                        <td>2.10</td>
+                        <td></td>
+                        <td>2.19</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">1.15</td>
+                        <td></td>
+                        <td>1.24</td>
+                        <td></td>
+                        <td>2.2</td>
+                        <td></td>
+                        <td>2.11</td>
+                        <td></td>
+                        <td>2.20</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">1.16</td>
+                        <td></td>
+                        <td>1.25</td>
+                        <td></td>
+                        <td>2.3</td>
+                        <td></td>
+                        <td>2.12</td>
+                        <td></td>
+                        <td>2.21</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">1.17</td>
+                        <td></td>
+                        <td>1.26</td>
+                        <td></td>
+                        <td>2.4</td>
+                        <td></td>
+                        <td>2.13</td>
+                        <td></td>
+                        <td>2.22</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">1.18</td>
+                        <td></td>
+                        <td>1.27</td>
+                        <td></td>
+                        <td>2.5</td>
+                        <td></td>
+                        <td>2.14</td>
+                        <td></td>
+                        <td>2.23</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">1.19</td>
+                        <td></td>
+                        <td>1.28</td>
+                        <td></td>
+                        <td>2.6</td>
+                        <td></td>
+                        <td>2.15</td>
+                        <td></td>
+                        <td>2.24</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="last-line-first-column">1.20</td>
+                        <td class="last-line"></td>
+                        <td class="last-line">1.29</td>
+                        <td class="last-line"></td>
+                        <td class="last-line">2.7</td>
+                        <td class="last-line"></td>
+                        <td class="last-line">2.16</td>
+                        <td class="last-line"></td>
+                        <td class="last-line">2.25</td>
+                        <td class="last-line-column"></td>
+                    </tr>
+                </table>
+            </label>
+            <label class="clocktable" for="table-2" id="clock-2">
+                <table class="fitness table">
+                    <th class="first-line-column" colspan="10">健身打卡（2023）</th>
+                    <tr>
+                        <td class="first-column">1.12</td>
+                        <td>22min</td>
+                        <td>1.21</td>
+                        <td></td>
+                        <td>1.30</td>
+                        <td></td>
+                        <td>2.8</td>
+                        <td></td>
+                        <td>2.17</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">1.13</td>
+                        <td>21min</td>
+                        <td>1.22</td>
+                        <td></td>
+                        <td>1.31</td>
+                        <td></td>
+                        <td>2.9</td>
+                        <td></td>
+                        <td>2.18</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">1.14</td>
+                        <td>29min</td>
+                        <td>1.23</td>
+                        <td></td>
+                        <td>2.1</td>
+                        <td></td>
+                        <td>2.10</td>
+                        <td></td>
+                        <td>2.19</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">1.15</td>
+                        <td></td>
+                        <td>1.24</td>
+                        <td></td>
+                        <td>2.2</td>
+                        <td></td>
+                        <td>2.11</td>
+                        <td></td>
+                        <td>2.20</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">1.16</td>
+                        <td></td>
+                        <td>1.25</td>
+                        <td></td>
+                        <td>2.3</td>
+                        <td></td>
+                        <td>2.12</td>
+                        <td></td>
+                        <td>2.21</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">1.17</td>
+                        <td></td>
+                        <td>1.26</td>
+                        <td></td>
+                        <td>2.4</td>
+                        <td></td>
+                        <td>2.13</td>
+                        <td></td>
+                        <td>2.22</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">1.18</td>
+                        <td></td>
+                        <td>1.27</td>
+                        <td></td>
+                        <td>2.5</td>
+                        <td></td>
+                        <td>2.14</td>
+                        <td></td>
+                        <td>2.23</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">1.19</td>
+                        <td></td>
+                        <td>1.28</td>
+                        <td></td>
+                        <td>2.6</td>
+                        <td></td>
+                        <td>2.15</td>
+                        <td></td>
+                        <td>2.24</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="last-line-first-column">1.20</td>
+                        <td class="last-line"></td>
+                        <td class="last-line">1.29</td>
+                        <td class="last-line"></td>
+                        <td class="last-line">2.7</td>
+                        <td class="last-line"></td>
+                        <td class="last-line">2.16</td>
+                        <td class="last-line"></td>
+                        <td class="last-line">2.25</td>
+                        <td class="last-line-column"></td>
+                    </tr>
+                </table>
+            </label>
+            <label class="clocktable" for="table-3" id="clock-3">
+                <table class="English table">
+                    <th class="first-line-column" colspan="10">英语打卡（2023）</th>
+                    <tr>
+                        <td class="first-column">1.12</td>
+                        <td>1</td>
+                        <td>1.21</td>
+                        <td></td>
+                        <td>1.30</td>
+                        <td></td>
+                        <td>2.8</td>
+                        <td></td>
+                        <td>2.17</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">1.13</td>
+                        <td></td>
+                        <td>1.22</td>
+                        <td></td>
+                        <td>1.31</td>
+                        <td></td>
+                        <td>2.9</td>
+                        <td></td>
+                        <td>2.18</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">1.14</td>
+                        <td></td>
+                        <td>1.23</td>
+                        <td></td>
+                        <td>2.1</td>
+                        <td></td>
+                        <td>2.10</td>
+                        <td></td>
+                        <td>2.19</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">1.15</td>
+                        <td></td>
+                        <td>1.24</td>
+                        <td></td>
+                        <td>2.2</td>
+                        <td></td>
+                        <td>2.11</td>
+                        <td></td>
+                        <td>2.20</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">1.16</td>
+                        <td></td>
+                        <td>1.25</td>
+                        <td></td>
+                        <td>2.3</td>
+                        <td></td>
+                        <td>2.12</td>
+                        <td></td>
+                        <td>2.21</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">1.17</td>
+                        <td></td>
+                        <td>1.26</td>
+                        <td></td>
+                        <td>2.4</td>
+                        <td></td>
+                        <td>2.13</td>
+                        <td></td>
+                        <td>2.22</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">1.18</td>
+                        <td></td>
+                        <td>1.27</td>
+                        <td></td>
+                        <td>2.5</td>
+                        <td></td>
+                        <td>2.14</td>
+                        <td></td>
+                        <td>2.23</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">1.19</td>
+                        <td></td>
+                        <td>1.28</td>
+                        <td></td>
+                        <td>2.6</td>
+                        <td></td>
+                        <td>2.15</td>
+                        <td></td>
+                        <td>2.24</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="last-line-first-column">1.20</td>
+                        <td class="last-line"></td>
+                        <td class="last-line">1.29</td>
+                        <td class="last-line"></td>
+                        <td class="last-line">2.7</td>
+                        <td class="last-line"></td>
+                        <td class="last-line">2.16</td>
+                        <td class="last-line"></td>
+                        <td class="last-line">2.25</td>
+                        <td class="last-line-column"></td>
+                    </tr>
+                </table>
+            </label>
+            <label class="clocktable" for="table-4" id="clock-4">
+                <table class="read table">
+                    <th class="first-line-column" colspan="10">阅读打卡（2023）</th>
+                    <tr>
+                        <td class="first-column">1.12</td>
+                        <td>1</td>
+                        <td>1.21</td>
+                        <td></td>
+                        <td>1.30</td>
+                        <td></td>
+                        <td>2.8</td>
+                        <td></td>
+                        <td>2.17</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">1.13</td>
+                        <td></td>
+                        <td>1.22</td>
+                        <td></td>
+                        <td>1.31</td>
+                        <td></td>
+                        <td>2.9</td>
+                        <td></td>
+                        <td>2.18</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">1.14</td>
+                        <td></td>
+                        <td>1.23</td>
+                        <td></td>
+                        <td>2.1</td>
+                        <td></td>
+                        <td>2.10</td>
+                        <td></td>
+                        <td>2.19</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">1.15</td>
+                        <td></td>
+                        <td>1.24</td>
+                        <td></td>
+                        <td>2.2</td>
+                        <td></td>
+                        <td>2.11</td>
+                        <td></td>
+                        <td>2.20</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">1.16</td>
+                        <td></td>
+                        <td>1.25</td>
+                        <td></td>
+                        <td>2.3</td>
+                        <td></td>
+                        <td>2.12</td>
+                        <td></td>
+                        <td>2.21</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">1.17</td>
+                        <td></td>
+                        <td>1.26</td>
+                        <td></td>
+                        <td>2.4</td>
+                        <td></td>
+                        <td>2.13</td>
+                        <td></td>
+                        <td>2.22</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">1.18</td>
+                        <td></td>
+                        <td>1.27</td>
+                        <td></td>
+                        <td>2.5</td>
+                        <td></td>
+                        <td>2.14</td>
+                        <td></td>
+                        <td>2.23</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="first-column">1.19</td>
+                        <td></td>
+                        <td>1.28</td>
+                        <td></td>
+                        <td>2.6</td>
+                        <td></td>
+                        <td>2.15</td>
+                        <td></td>
+                        <td>2.24</td>
+                        <td class="last-column"></td>
+                    </tr>
+                    <tr>
+                        <td class="last-line-first-column">1.20</td>
+                        <td class="last-line"></td>
+                        <td class="last-line">1.29</td>
+                        <td class="last-line"></td>
+                        <td class="last-line">2.7</td>
+                        <td class="last-line"></td>
+                        <td class="last-line">2.16</td>
+                        <td class="last-line"></td>
+                        <td class="last-line">2.25</td>
+                        <td class="last-line-column"></td>
+                    </tr>
+                </table>
+            </label>
+        </div>
+    </div>
+</body>
+</html>
